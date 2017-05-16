@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.uncc.hw09.CreateTripActivity">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Create a Trip"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/tripTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:ems="12"
+        android:hint="Title"
+        android:inputType="textPersonName"
+        android:textSize="14sp" />
+    <EditText
+        android:id="@+id/tripLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tripTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:ems="12"
+        android:hint="Location"
+        android:inputType="textPersonName"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/trip_pic"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/tripLocation"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        app:srcCompat="@android:drawable/btn_star_big_on"
+        android:scaleType="fitCenter"/>
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/trip_pic"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="25dp"
+        android:text="Upload Location Photo"
+        android:textAllCaps="false"
+        android:onClick="openGall"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add friends to trip"
+        android:layout_below="@id/button8"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:id="@+id/textView17"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/textView17"
+        android:layout_marginTop="10dp"
+        android:id="@+id/trip_people"
+        />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tripLocation"
+        android:layout_below="@+id/trip_people"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorPrimary"
+        android:text="Create"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:onClick="createTrip"/>
+
+    <Button
+        android:id="@+id/button10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button9"
+        android:layout_alignEnd="@+id/tripLocation"
+        android:text="Cancel"
+        android:textAllCaps="false"
+        android:onClick="cancel"/>
+
+
+
+
+</RelativeLayout>

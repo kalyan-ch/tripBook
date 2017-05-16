@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">TripBook</string>
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </string-array>
+    <string name="key">129035540900-ul01mke63maaenibotp58kvh40dc0f28.apps.googleusercontent.com</string>
+    <string name="title_activity_search_places">Map</string>
+</resources>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.uncc.hw09.ProfileActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/profile_pic"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@android:drawable/btn_star_big_on"
+                android:scaleType="fitCenter"/>
+
+            <TextView
+                android:id="@+id/profile_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:text="TextView"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_alignTop="@+id/profile_pic"
+                android:layout_toEndOf="@+id/profile_pic" />
+
+            <TextView
+                android:id="@+id/profile_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/profile_name"
+                android:layout_below="@+id/profile_name"
+                android:layout_marginTop="10dp"
+                android:text="TextView" />
+
+            <TextView
+                android:id="@+id/profile_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/profile_email"
+                android:layout_below="@+id/profile_email"
+                android:layout_marginTop="10dp"
+                android:text="TextView"
+                />
+
+            <Button
+                android:id="@+id/add_friend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/profile_gender"
+                android:layout_below="@+id/profile_gender"
+                android:background="@color/colorPrimary"
+                android:text="Add friend"
+                android:textAllCaps="false"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/cardview_light_background"
+                android:onClick="addFriend"/>
+
+            <ImageButton
+                android:id="@+id/edit_profile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="10dp"
+                android:layout_marginTop="10dp"
+                android:onClick="editProfile"
+                android:scaleType="fitCenter"
+                android:textAllCaps="false"
+                app:srcCompat="@drawable/ic_mode_edit_black_24dp" />
+
+            <TextView
+                android:id="@+id/textview10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Friends"
+                android:textSize="16sp"
+                android:layout_marginTop="15dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/add_friend"
+                />
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="375dp"
+                android:layout_height="150dp"
+                android:orientation="horizontal"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/textview10"
+                android:layout_marginTop="10dp"
+                android:id="@+id/profFrndsRec" />
+
+            <TextView
+                android:id="@+id/textview29"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Trips"
+                android:textSize="16sp"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/profFrndsRec"
+                />
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="375dp"
+                android:layout_height="150dp"
+                android:orientation="horizontal"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/textview29"
+                android:layout_marginTop="10dp"
+                android:id="@+id/profTripRec" />
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

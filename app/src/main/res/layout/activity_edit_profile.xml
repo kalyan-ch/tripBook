@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.uncc.hw09.EditProfileActivity">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="10dp"
+        android:text="Edit your profile"
+        android:textSize="16sp"/>
+
+    <EditText
+        android:id="@+id/edit_fName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="61dp"
+        android:ems="10"
+        android:hint="First Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/edit_lName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/edit_fName"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Last Name"
+        android:inputType="textPersonName" />
+
+    <Spinner
+        android:id="@+id/edit_gender"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_lName"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:id="@+id/edit_dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignStart="@+id/textView6"
+        android:layout_below="@+id/edit_gender"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@android:drawable/star_big_on" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/edit_lName"
+        android:layout_centerVertical="true"
+        android:text="Change profile pic"
+        android:textAllCaps="false"
+        android:onClick="openGallforEdit"/>
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="65dp"
+        android:text="Save Changes"
+        android:textAllCaps="false"
+        android:onClick="saveChanges"/>
+
+
+</RelativeLayout>

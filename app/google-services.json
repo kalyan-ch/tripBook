@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "129035540900",
+    "firebase_url": "https://tripbook-f38e2.firebaseio.com",
+    "project_id": "tripbook-f38e2",
+    "storage_bucket": "tripbook-f38e2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:129035540900:android:3719bac0b117e085",
+        "android_client_info": {
+          "package_name": "edu.uncc.hw09"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "129035540900-rsdk0k08hsqnrs1emsc61jdka3k9ekqv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "edu.uncc.hw09",
+            "certificate_hash": "bef20bd4a6115fa3133e40be6ec3880565093a2a"
+          }
+        },
+        {
+          "client_id": "129035540900-ul01mke63maaenibotp58kvh40dc0f28.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFXWFt34qTma5H5qQh0emP2hXqsTmtm_0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "129035540900-ul01mke63maaenibotp58kvh40dc0f28.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
