@@ -18,6 +18,9 @@ public class ChatMessage {
         return views;
     }
 
+
+    
+
     public void setViews(String views) {
         this.views = views;
     }
